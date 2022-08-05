@@ -1,0 +1,287 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-msys
+ 
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Fri Aug  5 17:03:04 2022
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+ 
+# environment
+USERPROFILE = C:\Users\Jeong
+# environment
+LOCAL_GIT_DIRECTORY = C:\Users\Jeong\AppData\Local\GitHubDesktop\app-3.0.5\resources\app\git
+# environment
+LOCALAPPDATA = C:\Users\Jeong\AppData\Local
+# environment
+VSCODE_CWD = C:\WINDOWS\system32
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make
+# environment
+GOPATH = C:\Users\Jeong\go
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_22092_JDEOGAPEGOYDNGKC
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\Jeong\AppData\Roaming\Code\CachedData\da76f93349a72022ca4670c1b84860304616aaa2
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /c/Users/Jeong/AppData/Local/Temp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\Jeong\OneDrive
+# environment
+POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro
+# makefile
+CURDIR := /c/Users/Jeong/Dev/cfft_practice
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+!C: = c:\Users\Jeong\Dev\cfft_practice
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile
+MAKEFILE_LIST := 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 22092
+# environment
+CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"bc0696a354ac89b89c7e4c6393bdde7b.ko","_translationsConfigFile":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\bc0696a354ac89b89c7e4c6393bdde7b.ko\\tcf.json","_cacheRoot":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\bc0696a354ac89b89c7e4c6393bdde7b.ko","_resolvedLanguagePackCoreLocation":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\bc0696a354ac89b89c7e4c6393bdde7b.ko\\da76f93349a72022ca4670c1b84860304616aaa2","_corruptedFile":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\bc0696a354ac89b89c7e4c6393bdde7b.ko\\corrupted.info","_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\Jeong\OneDrive
+# default
+MAKE_HOST := x86_64-pc-msys
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := /bin/sh
+# environment
+HOMEPATH = \Users\Jeong
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /c/python3.10:/c/python3.10/Scripts:/mingw64/bin:/c/texlive/2022/bin/win32:/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.6/bin:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/Program Files/Git/cmd:/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.1.0:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Program Files/Bandizip:/c/Program Files/dotnet:/c/Program Files/CMake/bin:/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64:/c/Program Files/PuTTY:/c/Program Files/Docker/Docker/resources/bin:/c/ProgramData/DockerDesktop/version-bin:/c/Program Files/PowerShell/7:/c/Program Files/Go/bin:/c/Program Files/WireGuard:/usr/bin:/c/python3.10/Scripts:/c/python3.10:/c/texlive/2022/bin/win32:/c/Users/Jeong/AppData/Local/Microsoft/WindowsApps:/c/Users/Jeong/AppData/Local/GitHubDesktop/bin:/c/ffmpeg/bin:/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64:/c/i686-8.1.0-release-posix-sjlj-rt_v6-rev0 (1)/mingw32/bin:/c/Program Files/JetBrains/PyCharm 2022.1.1/bin:/c/Users/Jeong/go/bin:/c/Users/Jeong/AppData/Local/Programs/Microsoft VS Code/bin
+# environment
+COMPUTERNAME = DESKTOP-30D5MQE
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PYCHARM = C:\Program Files\JetBrains\PyCharm 2022.1.1\bin;
+# environment
+PROMPT = $P$G
+# environment
+NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
+# environment
+LOGONSERVER = \\DESKTOP-30D5MQE
+ 
+# environment
+USERNAME = Jeong
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = DESKTOP-30D5MQE
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+CUDA_PATH_V11_6 = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
+# makefile
+.DEFAULT_GOAL := 
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-30D5MQE
+# environment
+NUMBER_OF_PROCESSORS = 6
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\Jeong\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/Jeong
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /c/Users/Jeong/AppData/Local/Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\08edd6a5e2ab871309a1685105ed45d9-1.70.0-main-sock
+# environment
+TERM = xterm-256color
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+PROCESSOR_REVISION = 6001
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+# variable set hash-table stats:
+# Load=99/1024=10%, Rehash=0, Collisions=12/123=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2898570922, inode 18858823439738168): 7 files, no impossibilities.
+
+# 7 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# VPATH Search Paths
+
+ 
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 14 / storage = 109 B / avg = 7 B
+# current buf: size = 8162 B / used = 109 B / count = 14 / avg = 7 B
+
+# strcache performance: lookups = 17 / hit rate = 17%
+# hash-table stats:
+# Load=14/8192=0%, Rehash=0, Collisions=0/17=0%
+# Finished Make data base on Fri Aug  5 17:03:04 2022
+
+ 
