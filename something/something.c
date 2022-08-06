@@ -35,13 +35,20 @@ int main()
     dataProcess(&smp[0], &cinput[0], 512);
 
 
-    fft(&cinput[0], 512);
+    complex *res = fft(&cinput[0], 512);
 
-    file = fopen("../bin/output.bin", "wb");
+    float output[1024];
+
     for(int i=0; i<512; i++)
     {
-        fwrite(&cinput[i].real, sizeof(float), 1, file);
-        fwrite(&cinput[i].imag, sizeof(float), 1, file);
+        output[i] = res[i].real;
+        output[i+512] = res[i].imag;
+    }
+
+    file = fopen("../bin/output.bin", "wb");
+    for(int i=0; i<1024; i++)
+    {
+        fwrite(&output[i], sizeof(float), 1, file);
     }
     fclose(file);
 
@@ -52,11 +59,12 @@ int main()
 
 
 
-void fft(complex input[], complex output[], int lenth)
+complex *fft(complex input[], int lenth)
 {
     if(lenth <= 1)
-        return;
+        return input;
 
+    complex *output;
     output = (complex*)(malloc(lenth*sizeof(complex)));
     int D_lth = lenth>>1;
     complex *E, *O;
@@ -67,8 +75,8 @@ void fft(complex input[], complex output[], int lenth)
         E[i] = input[i*2];
         O[i] = input[i*2 +1];
     }
-    fft(E, D_lth);
-    fft(O, D_lth);
+    E = fft(E, D_lth);
+    O = fft(O, D_lth);
 
     for(int i=0; i<D_lth; i++)
     {
