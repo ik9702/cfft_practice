@@ -10,7 +10,7 @@ typedef struct _Cpx{
     float imag;
 } Cpx;
 
-Cpx* fft(Cpx input[],int lenth);
+Cpx* fft(Cpx input[],int lenth,int flag);
 void compInit(Cpx* input, float real, float imag);
 void dataProcess(float input[], Cpx *output, int lenth);
 Cpx cSum(Cpx *x, Cpx *y);
@@ -34,7 +34,7 @@ int main()
     dataProcess(&smp[0], &cinput[0], 512);
 
 
-    Cpx *res = fft(&cinput[0], 512);
+    Cpx *res = fft(&cinput[0], 512, 1);
 
     float output[1024];
 
@@ -56,7 +56,7 @@ int main()
 
 
 
-Cpx *fft(Cpx input[], int lenth)
+Cpx *fft(Cpx input[], int lenth, int flag)
 {
     if(lenth == 1)
         return input;
@@ -71,8 +71,8 @@ Cpx *fft(Cpx input[], int lenth)
         E[i] = input[i*2];
         O[i] = input[i*2 +1];
     }
-    E = fft(E, D_lth);
-    O = fft(O, D_lth);
+    E = fft(E, D_lth, 0);
+    O = fft(O, D_lth, 0);
 
     for(int i=0; i<D_lth; i++)
     {
@@ -84,7 +84,7 @@ Cpx *fft(Cpx input[], int lenth)
     }
     free(E);
     free(O);
-    if(lenth != 512)
+    if(flag != 1)
         free(input);
     return output;
 }
@@ -104,8 +104,8 @@ Cpx *ifft(Cpx input[], int lenth)
         E[i] = input[i*2];
         O[i] = input[i*2 + 1];
     }
-    E = fft(E, D_lth);
-    O = fft(O, D_lth);
+    E = fft(E, D_lth, 0);
+    O = fft(O, D_lth, 0);
 
     for(int i=0; i<D_lth; i++)
     {
