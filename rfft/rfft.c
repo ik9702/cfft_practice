@@ -5,18 +5,17 @@
 #define pi 3.14159265358979
 
 
-typedef struct
-{
+typedef struct _Cpx{
     float real;
     float imag;
-}complex;
+} Cpx;
 
-complex* fft(complex input[],int lenth);
-void compInit(complex* input, float real, float imag);
-void dataProcess(float input[], complex *output, int lenth);
-complex cSum(complex *x, complex *y);
-complex cSub(complex *x, complex *y);
-complex cMul(complex *x, complex *y);
+Cpx* fft(Cpx input[],int lenth);
+void compInit(Cpx* input, float real, float imag);
+void dataProcess(float input[], Cpx *output, int lenth);
+Cpx cSum(Cpx *x, Cpx *y);
+Cpx cSub(Cpx *x, Cpx *y);
+Cpx cMul(Cpx *x, Cpx *y);
 
 
 
@@ -31,11 +30,11 @@ int main()
     fread(&(smp[0]), sizeof(float), 512, file);
     fclose(file);
 
-    complex cinput[512];
+    Cpx cinput[512];
     dataProcess(&smp[0], &cinput[0], 512);
 
 
-    complex *res = fft(&cinput[0], 512);
+    Cpx *res = fft(&cinput[0], 512);
 
     float output[1024];
 
@@ -51,25 +50,22 @@ int main()
         fwrite(&output[i], sizeof(float), 1, file);
     }
     fclose(file);
-
-
     printf("it works");
     return 0;
 }
 
 
 
-complex *fft(complex input[], int lenth)
+Cpx *fft(Cpx input[], int lenth)
 {
-    if(lenth <= 1)
+    if(lenth == 1)
         return input;
-
-    complex *output;
-    output = (complex*)(malloc(lenth*sizeof(complex)));
+    Cpx *output;
+    output = (Cpx*)(malloc(lenth*sizeof(Cpx)));
     int D_lth = lenth>>1;
-    complex *E, *O;
-    E = (complex*)(malloc(D_lth*sizeof(complex)));
-    O = (complex*)(malloc(D_lth*sizeof(complex)));
+    Cpx *E, *O;
+    E = (Cpx*)(malloc(D_lth*sizeof(Cpx)));
+    O = (Cpx*)(malloc(D_lth*sizeof(Cpx)));
     for(int i=0; i<D_lth; i++)
     {
         E[i] = input[i*2];
@@ -80,9 +76,42 @@ complex *fft(complex input[], int lenth)
 
     for(int i=0; i<D_lth; i++)
     {
-        complex w;
+        Cpx w;
         compInit(&w, (float)cos(i * 2 * pi / lenth), (float)sin(i * 2*pi/lenth));
-        complex wO = cMul(&w, &O[i]);
+        Cpx wO = cMul(&w, &O[i]);
+        output[i] = cSum(&E[i], &wO);
+        output[i+D_lth] = cSub(&E[i], &wO);
+    }
+    free(E);
+    free(O);
+    if(lenth != 512)
+        free(input);
+    return output;
+}
+
+Cpx *ifft(Cpx input[], int lenth)
+{
+    if(lenth == 1)
+        return input;
+    Cpx *output;
+    output = (Cpx*)(malloc(lenth*sizeof(Cpx)));
+    int D_lth = lenth>>1;
+    Cpx *E, *O;
+    E = (Cpx*)(malloc(D_lth*sizeof(Cpx)));
+    O = (Cpx*)(malloc(D_lth*sizeof(Cpx)));
+    for(int i=0; i<D_lth; i++)
+    {
+        E[i] = input[i*2];
+        O[i] = input[i*2 + 1];
+    }
+    E = fft(E, D_lth);
+    O = fft(O, D_lth);
+
+    for(int i=0; i<D_lth; i++)
+    {
+        Cpx w;
+        compInit(&w, (float)cos(i * 2 * pi / lenth), (float)sin(i * 2*pi/lenth));
+        Cpx wO = cMul(&w, &O[i]);
         output[i] = cSum(&E[i], &wO);
         output[i+D_lth] = cSub(&E[i], &wO);
     }
@@ -94,7 +123,9 @@ complex *fft(complex input[], int lenth)
 }
 
 
-void compInit(complex* input, float real, float imag)
+
+
+void compInit(Cpx* input, float real, float imag)
 {
     input->real = real;
     input->imag = imag;
@@ -102,33 +133,33 @@ void compInit(complex* input, float real, float imag)
 
 
 
-complex cSum(complex *x, complex *y)
+Cpx cSum(Cpx *x, Cpx *y)
 {
-    complex output;
+    Cpx output;
     output.real = x->real + y->real;
     output.imag = x->imag + y->imag;
     return output;
 }
 
-complex cSub(complex *x, complex *y)
+Cpx cSub(Cpx *x, Cpx *y)
 {
-    complex output;
+    Cpx output;
     output.real = x->real - y->real;
     output.imag = x->imag - y->imag;
     return output;
 }
 
 
-complex cMul(complex *x, complex *y)
+Cpx cMul(Cpx *x, Cpx *y)
 {
-    complex output;
+    Cpx output;
     output.real = x->real * y->real - x->imag * y->imag;
     output.imag = x->real * y->imag + x->imag * y->real;
     return output;
 }
 
 
-void dataProcess(float input[], complex output[], int lenth)
+void dataProcess(float input[], Cpx output[], int lenth)
 {
     for(int i=0; i<lenth; i++)
     {

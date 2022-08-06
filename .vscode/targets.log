@@ -9,12 +9,13 @@ make: *** No rule to make target 'all'.  Stop.
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Sat Aug  6 00:52:19 2022
+# Make data base, printed on Sat Aug  6 10:44:27 2022
 
 # Variables
 
 # environment
 SYSTEMDRIVE = C:
+ 
 # environment
 LC_ALL = C
 # environment
@@ -38,7 +39,7 @@ GOPATH = C:\Users\Jeong\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_17252_ZKRFNVNOMIFCGDVR
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_8564_OOCVMSCIZHSSJCDP
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -55,7 +56,6 @@ VSCODE_CODE_CACHE_PATH = C:\Users\Jeong\AppData\Roaming\Code\CachedData\da76f933
 LANG = C
 # default
 .LOADED := 
- 
 # environment
 TMP = /c/Users/Jeong/AppData/Local/Temp
 # default
@@ -89,7 +89,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 17252
+VSCODE_PID = 8564
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
@@ -213,6 +213,7 @@ PROCESSOR_REVISION = 6001
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
+ 
 # Load=99/1024=10%, Rehash=0, Collisions=12/123=10%
 
 # Pattern-specific Variable Values
@@ -279,6 +280,6 @@ GNUmakefile:
 # strcache performance: lookups = 17 / hit rate = 17%
 # hash-table stats:
 # Load=14/8192=0%, Rehash=0, Collisions=0/17=0%
-# Finished Make data base on Sat Aug  6 00:52:19 2022
+# Finished Make data base on Sat Aug  6 10:44:27 2022
 
  
