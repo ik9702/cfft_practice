@@ -1,4 +1,5 @@
-make.exe --dry-run --keep-going --print-directory
-'make.exe'��(��) ���� �Ǵ� �ܺ� ����, ������ �� �ִ� ���α׷�, �Ǵ�
-��ġ ������ �ƴմϴ�.
-
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/c/Users/ik970/Desktop/dev/cfft_practice'
+cd ./obj && make
+make: Leaving directory '/c/Users/ik970/Desktop/dev/cfft_practice'
+ 

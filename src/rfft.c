@@ -1,71 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "../Complex/Complex.h"
+#include "rfft.h"
 
-
-
-Cpx* fft(Cpx input[], int lenth, int flag);
-Cpx* ifft(Cpx input[], int lenth, int flag);
-
-void dataProcess(float input[], Cpx *output, int lenth);
-
-
-
-int main()
-{
-    float smp[512];
-    char buff[256];
-    FILE *file;
-    sprintf(buff, "%s","../bin/input.bin");
-    file=fopen(buff, "rb");
-    fread(&(smp[0]), sizeof(float), 512, file);
-    fclose(file);
-
-    Cpx cinput[512];
-    dataProcess(&smp[0], &cinput[0], 512);
-
-
-    Cpx *res = fft(&cinput[0], 512, 1);
-    float output[1024];
-
-    for(int i=0; i<512; i++)
-    {
-        output[i] = res[i].real;
-        output[i+512] = res[i].imag;
-    }
-
-    file = fopen("../bin/output.bin", "wb");
-    for(int i=0; i<1024; i++)
-    {
-        fwrite(&output[i], sizeof(float), 1, file);
-    }
-    fclose(file);
-
-
-
-    Cpx *recov = ifft(&res[0], 512, 1);
-    for(int i=0; i<512; i++)
-    {
-        output[i] = recov[i].real;
-        output[i+512] = recov[i].imag;
-    }
-    file = fopen("../bin/recover.bin", "wb");
-    for(int i=0; i<1024; i++)
-    {
-        fwrite(&output[i], sizeof(float), 1, file);
-    }
-    fclose(file);
-
-
-
-
-
-
-    printf("it works");
-    return 0;
-}
-
+#define pi 3.14159265358979323846
 
 
 Cpx *fft(Cpx input[], int lenth, int flag)
@@ -100,12 +38,6 @@ Cpx *fft(Cpx input[], int lenth, int flag)
         free(input);
     return output;
 }
-
-
-
-
-
-
 
 Cpx *ifft(Cpx input[], int lenth, int flag)
 {
@@ -149,10 +81,6 @@ Cpx *ifft(Cpx input[], int lenth, int flag)
     }
     return output;
 }
-
-
-
-
 
 void dataProcess(float input[], Cpx output[], int lenth)
 {

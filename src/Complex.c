@@ -1,12 +1,12 @@
-#include "Complex.h"
+#include <stdio.h>
+#include "complex.h"
+
 
 void compInit(Cpx* input, float real, float imag)
 {
     input->real = real;
     input->imag = imag;
 }
-
-
 
 Cpx cSum(Cpx *x, Cpx *y)
 {
