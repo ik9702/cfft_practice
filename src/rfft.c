@@ -1,22 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "../Complex/Complex.h"
 
-#define pi 3.14159265358979
 
-
-typedef struct _Cpx{
-    float real;
-    float imag;
-} Cpx;
 
 Cpx* fft(Cpx input[], int lenth, int flag);
 Cpx* ifft(Cpx input[], int lenth, int flag);
-void compInit(Cpx* input, float real, float imag);
+
 void dataProcess(float input[], Cpx *output, int lenth);
-Cpx cSum(Cpx *x, Cpx *y);
-Cpx cSub(Cpx *x, Cpx *y);
-Cpx cMul(Cpx *x, Cpx *y);
+
 
 
 int main()
@@ -159,40 +152,6 @@ Cpx *ifft(Cpx input[], int lenth, int flag)
 
 
 
-
-
-void compInit(Cpx* input, float real, float imag)
-{
-    input->real = real;
-    input->imag = imag;
-}
-
-
-
-Cpx cSum(Cpx *x, Cpx *y)
-{
-    Cpx output;
-    output.real = x->real + y->real;
-    output.imag = x->imag + y->imag;
-    return output;
-}
-
-Cpx cSub(Cpx *x, Cpx *y)
-{
-    Cpx output;
-    output.real = x->real - y->real;
-    output.imag = x->imag - y->imag;
-    return output;
-}
-
-
-Cpx cMul(Cpx *x, Cpx *y)
-{
-    Cpx output;
-    output.real = x->real * y->real - x->imag * y->imag;
-    output.imag = x->real * y->imag + x->imag * y->real;
-    return output;
-}
 
 
 void dataProcess(float input[], Cpx output[], int lenth)
