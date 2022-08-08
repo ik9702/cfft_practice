@@ -27,7 +27,7 @@ int main()
 
 
     Cpx *recov = R_ifft(&res[0], 512, 1);
-    CtoR(&recov[0], &output[0], 512);
+    CtoR(recov, output, 512);
     file = fopen("bin/recover.bin", "wb");
     for(int i=0; i<1024; i++)
     {
