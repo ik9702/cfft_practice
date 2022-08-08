@@ -10,7 +10,7 @@ VPATH = $(SRCDIR1) $(SRCDIR2) ..
 CFLAGS = -O2 -I$(INCDIR)
 LIBS = -lm
 
-TARGET = modeltest.exe
+TARGET = ffttest.exe
 
 SRCS = $(foreach dir, .. $(SRCDIR1) $(SRCDIR2), $(wildcard $(dir)/*.c))
 SRCS := $(notdir $(SRCS))
