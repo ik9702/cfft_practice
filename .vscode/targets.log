@@ -5,9 +5,8 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Mon Aug  8 11:35:25 2022
+# Make data base, printed on Mon Aug  8 15:41:43 2022
 
 # Variables
 
@@ -17,7 +16,6 @@ FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 SYSTEMDRIVE = C:
 # environment
 LC_ALL = C
- 
 # makefile (from 'makefile', line 1)
 OBJDIR = ./obj
 # environment
@@ -41,7 +39,7 @@ GOPATH = C:\Users\Jeong\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_24248_BWMNMAWJWNQNONRN
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6868_SJIKGPXMYCWDSSKI
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -93,7 +91,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 24248
+VSCODE_PID = 6868
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
@@ -217,9 +215,7 @@ PROCESSOR_REVISION = 6001
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
- 
 # Load=102/1024=10%, Rehash=0, Collisions=13/133=10%
- 
 
 # Pattern-specific Variable Values
 
@@ -227,9 +223,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (device 2898570922, inode 18858823439738168): 11 files, no impossibilities.
+# . (device 2898570922, inode 18858823439738168): 12 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -306,12 +302,12 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 115 B / avg = 6 B
-# current buf: size = 8162 B / used = 115 B / count = 17 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 18 / storage = 120 B / avg = 6 B
+# current buf: size = 8162 B / used = 120 B / count = 18 / avg = 6 B
 
-# strcache performance: lookups = 26 / hit rate = 34%
+# strcache performance: lookups = 27 / hit rate = 33%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=0/26=0%
-# Finished Make data base on Mon Aug  8 11:35:25 2022
+# Load=18/8192=0%, Rehash=0, Collisions=0/27=0%
+# Finished Make data base on Mon Aug  8 15:41:43 2022
 
  

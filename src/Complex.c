@@ -35,7 +35,6 @@ Cpx cMul(Cpx *x, Cpx *y)
 
 void RtoC(float input[], Cpx output[], int lenth)
 {
-    output = (Cpx*)(calloc(lenth, sizeof(Cpx)));
     for(int i=0; i<lenth; i++)
     {
         compInit(&output[i], input[i], 0);
@@ -45,11 +44,9 @@ void RtoC(float input[], Cpx output[], int lenth)
 
 void CtoR(Cpx input[], float output[], int lenth)
 {
-    output = calloc(lenth*2, sizeof(float));
     for(int i=0; i<lenth; i++)
     {
         output[i] = input[i].real;
         output[i + lenth] = input[i].imag;
     }
-    free(input);
 }
