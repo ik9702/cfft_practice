@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Mon Aug  8 10:48:05 2022
+# Make data base, printed on Mon Aug  8 11:35:25 2022
 
 # Variables
 
@@ -17,6 +17,7 @@ FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 SYSTEMDRIVE = C:
 # environment
 LC_ALL = C
+ 
 # makefile (from 'makefile', line 1)
 OBJDIR = ./obj
 # environment
@@ -40,7 +41,7 @@ GOPATH = C:\Users\Jeong\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_24140_BLRXIIWAHPTSJNEE
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_24248_BWMNMAWJWNQNONRN
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -72,7 +73,7 @@ POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro
 # makefile
 CURDIR := /c/Users/Jeong/Dev/cfft_practice
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -92,7 +93,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 24140
+VSCODE_PID = 24248
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
@@ -169,7 +170,6 @@ CUDA_PATH_V11_6 = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 MAKE_VERSION := 4.3
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
- 
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-30D5MQE
 # environment
@@ -217,7 +217,9 @@ PROCESSOR_REVISION = 6001
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
+ 
 # Load=102/1024=10%, Rehash=0, Collisions=13/133=10%
+ 
 
 # Pattern-specific Variable Values
 
@@ -304,12 +306,12 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 117 B / avg = 6 B
-# current buf: size = 8162 B / used = 117 B / count = 17 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 115 B / avg = 6 B
+# current buf: size = 8162 B / used = 115 B / count = 17 / avg = 6 B
 
 # strcache performance: lookups = 26 / hit rate = 34%
 # hash-table stats:
 # Load=17/8192=0%, Rehash=0, Collisions=0/26=0%
-# Finished Make data base on Mon Aug  8 10:48:05 2022
+# Finished Make data base on Mon Aug  8 11:35:25 2022
 
  

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include "complex.h"
 
 
@@ -31,4 +31,25 @@ Cpx cMul(Cpx *x, Cpx *y)
     output.real = x->real * y->real - x->imag * y->imag;
     output.imag = x->real * y->imag + x->imag * y->real;
     return output;
+}
+
+void RtoC(float input[], Cpx output[], int lenth)
+{
+    output = (Cpx*)(calloc(lenth, sizeof(Cpx)));
+    for(int i=0; i<lenth; i++)
+    {
+        compInit(&output[i], input[i], 0);
+    }
+}
+
+
+void CtoR(Cpx input[], float output[], int lenth)
+{
+    output = calloc(lenth*2, sizeof(float));
+    for(int i=0; i<lenth; i++)
+    {
+        output[i] = input[i].real;
+        output[i + lenth] = input[i].imag;
+    }
+    free(input);
 }

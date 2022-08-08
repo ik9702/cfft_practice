@@ -6,12 +6,12 @@
 #define pi 3.14159265358979323846
 
 
-Cpx *fft(Cpx input[], int lenth, int flag)
+Cpx *R_fft(Cpx input[], int lenth, int flag)
 {
     if(lenth == 1)
         return input;
     Cpx *output;
-    output = (Cpx*)(malloc(lenth*sizeof(Cpx)));
+    output = (Cpx *)(malloc(lenth * sizeof(Cpx)));
     int D_lth = lenth>>1;
     Cpx *E, *O;
     E = (Cpx*)(malloc(D_lth*sizeof(Cpx)));
@@ -21,8 +21,8 @@ Cpx *fft(Cpx input[], int lenth, int flag)
         E[i] = input[i*2];
         O[i] = input[i*2 +1];
     }
-    E = fft(E, D_lth, 0);
-    O = fft(O, D_lth, 0);
+    E = R_fft(E, D_lth, 0);
+    O = R_fft(O, D_lth, 0);
 
     for(int i=0; i<D_lth; i++)
     {
@@ -39,7 +39,7 @@ Cpx *fft(Cpx input[], int lenth, int flag)
     return output;
 }
 
-Cpx *ifft(Cpx input[], int lenth, int flag)
+Cpx *R_ifft(Cpx input[], int lenth, int flag)
 {
     if(lenth == 1)
         return input;
@@ -54,8 +54,8 @@ Cpx *ifft(Cpx input[], int lenth, int flag)
         E[i] = input[i*2];
         O[i] = input[i*2 +1];
     }
-    E = ifft(E, D_lth, 0);
-    O = ifft(O, D_lth, 0);
+    E = R_ifft(E, D_lth, 0);
+    O = R_ifft(O, D_lth, 0);
 
     for(int i=0; i<D_lth; i++)
     {
@@ -82,10 +82,3 @@ Cpx *ifft(Cpx input[], int lenth, int flag)
     return output;
 }
 
-void dataProcess(float input[], Cpx output[], int lenth)
-{
-    for(int i=0; i<lenth; i++)
-    {
-        compInit(&output[i], input[i], 0);
-    }
-}
