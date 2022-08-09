@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Aug  8 15:41:43 2022
+# Make data base, printed on Tue Aug  9 10:56:40 2022
 
 # Variables
 
@@ -21,11 +21,9 @@ OBJDIR = ./obj
 # environment
 USERPROFILE = C:\Users\Jeong
 # environment
-LOCAL_GIT_DIRECTORY = C:\Users\Jeong\AppData\Local\GitHubDesktop\app-3.0.5\resources\app\git
-# environment
 LOCALAPPDATA = C:\Users\Jeong\AppData\Local
 # environment
-VSCODE_CWD = C:\Users\Jeong\AppData\Local\GitHubDesktop\app-3.0.5
+VSCODE_CWD = C:\Users\Jeong\AppData\Local\Programs\Microsoft VS Code
 # environment
 SYSTEMROOT = C:\WINDOWS
 # environment
@@ -39,7 +37,7 @@ GOPATH = C:\Users\Jeong\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6868_SJIKGPXMYCWDSSKI
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18976_AUSALAIHTRLOPZET
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -71,7 +69,7 @@ POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro
 # makefile
 CURDIR := /c/Users/Jeong/Dev/cfft_practice
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -91,7 +89,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 6868
+VSCODE_PID = 18976
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
@@ -204,10 +202,6 @@ SUFFIXES :=
 ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
-# environment
-VSCODE_CLI = 1
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
@@ -215,7 +209,7 @@ PROCESSOR_REVISION = 6001
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
-# Load=102/1024=10%, Rehash=0, Collisions=13/133=10%
+# Load=99/1024=10%, Rehash=0, Collisions=13/130=10%
 
 # Pattern-specific Variable Values
 
@@ -223,9 +217,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (device 2898570922, inode 18858823439738168): 12 files, no impossibilities.
+# . (device 2898570922, inode 18858823439738168): 13 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -302,12 +296,12 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 120 B / avg = 6 B
-# current buf: size = 8162 B / used = 120 B / count = 18 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 132 B / avg = 6 B
+# current buf: size = 8162 B / used = 132 B / count = 19 / avg = 6 B
 
-# strcache performance: lookups = 27 / hit rate = 33%
+# strcache performance: lookups = 28 / hit rate = 32%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=0/27=0%
-# Finished Make data base on Mon Aug  8 15:41:43 2022
+# Load=19/8192=0%, Rehash=0, Collisions=0/28=0%
+# Finished Make data base on Tue Aug  9 10:56:40 2022
 
  

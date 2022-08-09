@@ -2,6 +2,6 @@
 #define __MAIN_H
 
 #include "complex.h"
-#include "rfft.h"
+#include "fft.h"
 
 #endif

@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "rfft.h"
+#include "fft.h"
+#include <string.h>
 
 #define pi 3.14159265358979323846
 
@@ -78,6 +79,75 @@ Cpx *R_ifft(Cpx input[], int lenth, int flag)
             output[i].real /= lenth;
             output[i].imag /= lenth;
         }
+    }
+    return output;
+}
+
+Cpx *Radix2(Cpx input[], const int lenth)
+{
+    int m, mm;
+    Cpx *output, w, E, O, Ow;
+    output = (Cpx*)(calloc(lenth, sizeof(Cpx)));
+    memcpy(output, &input[0] ,sizeof(Cpx)*lenth);
+    bitReversal(output, lenth);
+    m = 2;
+    while(m <= lenth)
+    {
+        // printf("size : %i", m);
+        // puts("error1");
+        for(int i=0; i<lenth; i += m)
+        {
+            mm = m>>1;
+            // puts("error2");
+            for(int j=0; j<mm; j++)
+            {
+                compInit(&w, (float)cos(j * 2 * pi / m), (float)sin(j * 2*pi/m));
+                E = output[i + j];
+                O = output[i + j + mm];
+                Ow = cMul(&w, &O);
+
+                output[i + j] = cSum(&E, &Ow);
+                output[i + j + mm] = cSub(&E, &Ow);
+            }
+        }
+        m <<= 1;
+    }
+    return output;
+}
+
+Cpx *i_Radix2(Cpx input[], const int lenth)
+{
+    int m, mm;
+    Cpx *output, w, Ow;
+    output = (Cpx*)(calloc(lenth, sizeof(Cpx)));
+    memcpy(output, &input[0] ,sizeof(Cpx)*lenth);
+    bitReversal(output, lenth);
+    m = 2;
+    while(m <= lenth)
+    {
+
+        for(int i=0; i<lenth; i += m)
+        {
+            mm = m>>1;
+            // puts("error2");
+            for(int j=0; j<mm; j++)
+            {
+        
+                compInit(&w, (float)cos(j * 2 * pi / m), (float)sin(-1 * j * 2*pi/m));
+                Cpx E = output[i + j];
+                Cpx O = output[i + j + mm];
+                Cpx Ow = cMul(&w, &O);
+
+                output[i + j] = cSum(&E, &Ow);
+                output[i + j + mm] = cSub(&E, &Ow);
+            }
+        }
+        m <<= 1;
+    }
+    for(int i=0; i<lenth; i++)
+    {
+        output[i].real /= lenth;
+        output[i].imag /= lenth;
     }
     return output;
 }
