@@ -5,7 +5,6 @@
             "label": "C/C++: gcc.exe 활성 파일 빌드",
             "command": "C:\\msys64\\usr\\bin\\make.exe",
             "args": [
-                "clean",
                 "all"
             ],
             "options": {

@@ -16,10 +16,7 @@ int main()
     file=fopen(buff, "rb");
     fread(&(smp[0]), sizeof(float), 512, file);
     fclose(file);
-    for(int i=0; i<512; i++)
-    {
-        printf("%f, ", smp[i]);
-    }
+
 
     Cpx cinput[512];
     RtoC(&smp[0], &cinput[0], 512);
@@ -31,17 +28,16 @@ int main()
 
     // //-------------------------------------------------
 
-    file = fopen("bin/output.bin", "wb");
+    file = fopen("bin/export/output.bin", "wb");
     for(int i=0; i<1024; i++)
     {
         fwrite(&output[i], sizeof(float), 1, file);
     }
     fclose(file);
 
-
     Cpx *recov = i_Radix2(&res[0], 512);
     CtoR(recov, output, 512);
-    file = fopen("bin/recover.bin", "wb");
+    file = fopen("bin/export/recover.bin", "wb");
     for(int i=0; i<1024; i++)
     {
         fwrite(&output[i], sizeof(float), 1, file);

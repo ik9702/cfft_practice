@@ -30,6 +30,7 @@ $(TARGET) : $(OBJS)
 clean:
 	-rm -rf $(OBJS)
 	-rm -f ../$(TARGET)
+	-rm -rf ../bin/export/*
 
 depend: $(SRCS)
 	$(CC) -M $(CFLAGS) $^ > $@

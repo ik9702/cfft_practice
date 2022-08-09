@@ -5,8 +5,9 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Tue Aug  9 10:56:40 2022
+# Make data base, printed on Tue Aug  9 14:27:08 2022
 
 # Variables
 
@@ -37,7 +38,7 @@ GOPATH = C:\Users\Jeong\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_18976_AUSALAIHTRLOPZET
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9972_YJSZLUCVRITDAGOW
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -89,7 +90,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 18976
+VSCODE_PID = 9972
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
@@ -136,6 +137,7 @@ PYCHARM = C:\Program Files\JetBrains\PyCharm 2022.1.1\bin;
 PROMPT = $P$G
 # environment
 NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
+ 
 # environment
 LOGONSERVER = \\DESKTOP-30D5MQE
 # environment
@@ -278,7 +280,7 @@ all:
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-08 10:47:54.9521397
+#  Last modified 2022-08-09 14:23:21.2091788
 #  File has been updated.
 #  Successfully updated.
 
@@ -296,12 +298,12 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 132 B / avg = 6 B
-# current buf: size = 8162 B / used = 132 B / count = 19 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 129 B / avg = 6 B
+# current buf: size = 8162 B / used = 129 B / count = 19 / avg = 6 B
 
 # strcache performance: lookups = 28 / hit rate = 32%
 # hash-table stats:
 # Load=19/8192=0%, Rehash=0, Collisions=0/28=0%
-# Finished Make data base on Tue Aug  9 10:56:40 2022
+# Finished Make data base on Tue Aug  9 14:27:08 2022
 
  
