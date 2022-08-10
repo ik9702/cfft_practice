@@ -36,6 +36,7 @@ int main()
     fclose(file);
 
     Cpx *recov = i_Radix2(&res[0], 512);
+    
     CtoR(recov, output, 512);
     file = fopen("bin/export/recover.bin", "wb");
     for(int i=0; i<1024; i++)
