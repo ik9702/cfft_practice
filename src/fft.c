@@ -28,7 +28,7 @@ Cpx *R_fft(Cpx input[], int lenth, int flag)
     for(int i=0; i<D_lth; i++)
     {
         Cpx w;
-        compInit(&w, (float)cos(i * 2 * pi / lenth), (float)sin(i * 2*pi/lenth));
+        compInit(&w, (float)cos(i * 2 * (float)pi / lenth), (float)sin(i * 2*(float)pi/lenth));
         Cpx wO = cMul(&w, &O[i]);
         output[i] = cSum(&E[i], &wO);
         output[i+D_lth] = cSub(&E[i], &wO);
@@ -61,7 +61,7 @@ Cpx *R_ifft(Cpx input[], int lenth, int flag)
     for(int i=0; i<D_lth; i++)
     {
         Cpx w;
-        compInit(&w, (float)cos(i * -2 * pi / lenth), (float)sin(i * -2 * pi/lenth));
+        compInit(&w, (float)cos(i * -2 * (float)pi / lenth), (float)sin(i * -2 * (float)pi/lenth));
         Cpx wO = cMul(&w, &O[i]);
         output[i] = cSum(&E[i], &wO);
         output[i+D_lth] = cSub(&E[i], &wO);
@@ -101,7 +101,7 @@ Cpx *Radix2(Cpx input[], const int lenth)
             // puts("error2");
             for(int j=0; j<mm; j++)
             {
-                compInit(&w, (float)cos(j * 2 * pi / m), (float)sin(j * 2*pi/m));
+                compInit(&w, (float)cos(j * 2 * (float)pi / m), (float)sin(j * 2*(float)pi/m));
                 E = output[i + j];
                 O = output[i + j + mm];
                 Ow = cMul(&w, &O);
@@ -133,7 +133,7 @@ Cpx *i_Radix2(Cpx input[], const int lenth)
             for(int j=0; j<mm; j++)
             {
         
-                compInit(&w, (float)cos(j * 2 * pi / m), (float)sin(-1 * j * 2*pi/m));
+                compInit(&w, (float)cos(j * 2 * (float)pi / m), (float)sin(-1 * j * 2*(float)pi/m));
                 Cpx E = output[i + j];
                 Cpx O = output[i + j + mm];
                 Cpx Ow = cMul(&w, &O);

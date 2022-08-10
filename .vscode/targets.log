@@ -4,11 +4,9 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
- 
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Tue Aug  9 21:19:21 2022
+# Make data base, printed on Wed Aug 10 12:33:10 2022
 
 # Variables
 
@@ -23,7 +21,6 @@ OBJDIR = ./obj
 # environment
 USERPROFILE = C:\Users\Jeong
 # environment
- 
 LOCAL_GIT_DIRECTORY = C:\Users\Jeong\AppData\Local\GitHubDesktop\app-3.0.5\resources\app\git
 # environment
 LOCALAPPDATA = C:\Users\Jeong\AppData\Local
@@ -42,7 +39,7 @@ GOPATH = C:\Users\Jeong\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13400_LBQMZMKCFYWIBLAP
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_19788_QETWATUBDEQDEFZO
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -94,7 +91,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 13400
+VSCODE_PID = 19788
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
@@ -218,7 +215,6 @@ PROCESSOR_REVISION = 6001
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
- 
 # Load=102/1024=10%, Rehash=0, Collisions=13/133=10%
 
 # Pattern-specific Variable Values
@@ -227,7 +223,6 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 
 # Directories
 
- 
 # . (device 2898570922, inode 18858823439738168): 14 files, no impossibilities.
 
 # 14 files, no impossibilities in 1 directories.
@@ -313,6 +308,6 @@ makefile:
 # strcache performance: lookups = 29 / hit rate = 31%
 # hash-table stats:
 # Load=20/8192=0%, Rehash=0, Collisions=0/29=0%
-# Finished Make data base on Tue Aug  9 21:19:21 2022
+# Finished Make data base on Wed Aug 10 12:33:10 2022
 
  
