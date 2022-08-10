@@ -4,10 +4,11 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
+ 
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue Aug  9 14:27:08 2022
+# Make data base, printed on Tue Aug  9 21:19:21 2022
 
 # Variables
 
@@ -22,9 +23,12 @@ OBJDIR = ./obj
 # environment
 USERPROFILE = C:\Users\Jeong
 # environment
+ 
+LOCAL_GIT_DIRECTORY = C:\Users\Jeong\AppData\Local\GitHubDesktop\app-3.0.5\resources\app\git
+# environment
 LOCALAPPDATA = C:\Users\Jeong\AppData\Local
 # environment
-VSCODE_CWD = C:\Users\Jeong\AppData\Local\Programs\Microsoft VS Code
+VSCODE_CWD = C:\Users\Jeong\AppData\Local\GitHubDesktop\app-3.0.5
 # environment
 SYSTEMROOT = C:\WINDOWS
 # environment
@@ -38,7 +42,7 @@ GOPATH = C:\Users\Jeong\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9972_YJSZLUCVRITDAGOW
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13400_LBQMZMKCFYWIBLAP
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -70,7 +74,7 @@ POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro
 # makefile
 CURDIR := /c/Users/Jeong/Dev/cfft_practice
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -90,7 +94,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 9972
+VSCODE_PID = 13400
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
@@ -137,7 +141,6 @@ PYCHARM = C:\Program Files\JetBrains\PyCharm 2022.1.1\bin;
 PROMPT = $P$G
 # environment
 NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
- 
 # environment
 LOGONSERVER = \\DESKTOP-30D5MQE
 # environment
@@ -204,6 +207,10 @@ SUFFIXES :=
 ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
@@ -211,7 +218,8 @@ PROCESSOR_REVISION = 6001
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
-# Load=99/1024=10%, Rehash=0, Collisions=13/130=10%
+ 
+# Load=102/1024=10%, Rehash=0, Collisions=13/133=10%
 
 # Pattern-specific Variable Values
 
@@ -219,9 +227,10 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (device 2898570922, inode 18858823439738168): 13 files, no impossibilities.
+ 
+# . (device 2898570922, inode 18858823439738168): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -298,12 +307,12 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 129 B / avg = 6 B
-# current buf: size = 8162 B / used = 129 B / count = 19 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 141 B / avg = 7 B
+# current buf: size = 8162 B / used = 141 B / count = 20 / avg = 7 B
 
-# strcache performance: lookups = 28 / hit rate = 32%
+# strcache performance: lookups = 29 / hit rate = 31%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=0/28=0%
-# Finished Make data base on Tue Aug  9 14:27:08 2022
+# Load=20/8192=0%, Rehash=0, Collisions=0/29=0%
+# Finished Make data base on Tue Aug  9 21:19:21 2022
 
  
