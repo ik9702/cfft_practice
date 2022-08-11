@@ -6,7 +6,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug 11 17:45:37 2022
+# Make data base, printed on Thu Aug 11 23:10:57 2022
 
 # Variables
 
@@ -17,25 +17,25 @@ LC_ALL = C
 # makefile (from 'makefile', line 1)
 OBJDIR = ./obj
 # environment
-USERPROFILE = C:\Users\Jeong
+USERPROFILE = C:\Users\ik970
 # environment
-LOCALAPPDATA = C:\Users\Jeong\AppData\Local
+LOCAL_GIT_DIRECTORY = C:\Users\ik970\AppData\Local\GitHubDesktop\app-3.0.5\resources\app\git
 # environment
-VSCODE_CWD = C:\Users\Jeong\AppData\Local\Programs\Microsoft VS Code
+LOCALAPPDATA = C:\Users\ik970\AppData\Local
+# environment
+VSCODE_CWD = C:\Users\ik970\AppData\Local\GitHubDesktop\app-3.0.5
 # environment
 SYSTEMROOT = C:\WINDOWS
 # environment
-PROCESSOR_LEVEL = 23
+PROCESSOR_LEVEL = 6
 # environment
 PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
 # default
 MAKE_COMMAND := make
-# environment
-GOPATH = C:\Users\Jeong\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21908_UCCEULFCMWGVOSUQ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11092_UFTVGYWCAZCGHOTS
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -47,25 +47,25 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Jeong\AppData\Roaming\Code\CachedData\6d9b74a70ca9c7733b29f0456fd8195364076dda
+VSCODE_CODE_CACHE_PATH = C:\Users\ik970\AppData\Roaming\Code\CachedData\da76f93349a72022ca4670c1b84860304616aaa2
 # environment
 LANG = C
 # default
 .LOADED := 
 # environment
-TMP = /c/Users/Jeong/AppData/Local/Temp
+TMP = /c/Users/ik970/AppData/Local/Temp
 # default
 .INCLUDE_DIRS = /usr/include /usr/include
 # makefile
 MAKEFLAGS = pqrR
 # environment
-ONEDRIVE = C:\Users\Jeong\OneDrive
+ONEDRIVE = E:\OneDrive
 # environment
 POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro
 # makefile
-CURDIR := /c/Users/Jeong/Dev/cfft_practice
+CURDIR := /c/Users/ik970/Desktop/dev/cfft_practice
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -75,7 +75,7 @@ MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
 # environment
-!C: = c:\Users\Jeong\Dev\cfft_practice
+!C: = c:\Users\ik970\Desktop\dev\cfft_practice
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
@@ -85,9 +85,9 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 21908
+VSCODE_PID = 11092
 # environment
-CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
+CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -95,9 +95,9 @@ CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"cbe5aafd932102a66266fc5a1fc1d63c.ko","_translationsConfigFile":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko\\tcf.json","_cacheRoot":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko","_resolvedLanguagePackCoreLocation":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko\\6d9b74a70ca9c7733b29f0456fd8195364076dda","_corruptedFile":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"cbe5aafd932102a66266fc5a1fc1d63c.ko","_translationsConfigFile":"C:\\Users\\ik970\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko\\tcf.json","_cacheRoot":"C:\\Users\\ik970\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko","_resolvedLanguagePackCoreLocation":"C:\\Users\\ik970\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko\\da76f93349a72022ca4670c1b84860304616aaa2","_corruptedFile":"C:\\Users\\ik970\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko\\corrupted.info","_languagePackSupport":true}
 # environment
-ONEDRIVECONSUMER = C:\Users\Jeong\OneDrive
+ONEDRIVECONSUMER = E:\OneDrive
 # default
 MAKE_HOST := x86_64-pc-msys
 # environment
@@ -105,7 +105,7 @@ PROGRAMDATA = C:\ProgramData
 # default
 SHELL := /bin/sh
 # environment
-HOMEPATH = \Users\Jeong
+HOMEPATH = \Users\ik970
 # default
 MAKECMDGOALS := all
 # environment
@@ -119,23 +119,21 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /c/python3.10:/c/python3.10/Scripts:/mingw64/bin:/c/texlive/2022/bin/win32:/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.6/bin:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/Program Files/Git/cmd:/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.1.0:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Program Files/Bandizip:/c/Program Files/dotnet:/c/Program Files/CMake/bin:/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64:/c/Program Files/PuTTY:/c/Program Files/Docker/Docker/resources/bin:/c/ProgramData/DockerDesktop/version-bin:/c/Program Files/PowerShell/7:/c/Program Files/Go/bin:/c/Program Files/WireGuard:/usr/bin:/c/python3.10/Scripts:/c/python3.10:/c/texlive/2022/bin/win32:/c/Users/Jeong/AppData/Local/Microsoft/WindowsApps:/c/Users/Jeong/AppData/Local/GitHubDesktop/bin:/c/ffmpeg/bin:/c/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64:/c/i686-8.1.0-release-posix-sjlj-rt_v6-rev0 (1)/mingw32/bin:/c/Program Files/JetBrains/PyCharm 2022.1.1/bin:/c/Users/Jeong/go/bin:/c/Users/Jeong/AppData/Local/Programs/Microsoft VS Code/bin
+PATH = /c/python3.10:/c/python3.10/Scripts:/mingw64/bin:/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.7/bin:/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.7/libnvvp:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/c/Program Files/Bandizip:/c/Program Files/Git/cmd:/c/Program Files/PowerShell/7:/c/Program Files/NVIDIA Corporation/Nsight Compute 2022.2.0:/c/Program Files/Docker/Docker/resources/bin:/c/ProgramData/DockerDesktop/version-bin:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/Program Files/PuTTY:/usr/bin:/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/c/Program Files/dotnet:/c/Users/ik970/AppData/Local/Microsoft/WindowsApps:/c/Users/ik970/AppData/Local/Programs/Microsoft VS Code/bin:/c/Users/ik970/AppData/Local/GitHubDesktop/bin:/c/Users/ik970/.dotnet/tools
 # environment
-COMPUTERNAME = DESKTOP-30D5MQE
+COMPUTERNAME = IKSOON
 # default
 MAKEFILES := 
 # automatic
 ^F = $(notdir $^)
 # environment
-PYCHARM = C:\Program Files\JetBrains\PyCharm 2022.1.1\bin;
-# environment
 PROMPT = $P$G
 # environment
 NVTOOLSEXT_PATH = C:\Program Files\NVIDIA Corporation\NvToolsExt\
 # environment
-LOGONSERVER = \\DESKTOP-30D5MQE
+LOGONSERVER = \\IKSOON
 # environment
-USERNAME = Jeong
+USERNAME = ik9702
 # environment
 COMMONPROGRAMFILES = C:\Program Files\Common Files
 # automatic
@@ -149,29 +147,27 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-USERDOMAIN = DESKTOP-30D5MQE
+USERDOMAIN = IKSOON
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
-# environment
-__COMPAT_LAYER = DetectorsAppHealth
-# environment
-CUDA_PATH_V11_6 = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # makefile
 .DEFAULT_GOAL := all
+# environment
+CUDA_PATH_V11_7 = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.7
 # default
 MAKE_VERSION := 4.3
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
-USERDOMAIN_ROAMINGPROFILE = DESKTOP-30D5MQE
+USERDOMAIN_ROAMINGPROFILE = IKSOON
 # environment
-NUMBER_OF_PROCESSORS = 6
+NUMBER_OF_PROCESSORS = 8
 # environment
 PUBLIC = C:\Users\Public
 # environment
-APPDATA = C:\Users\Jeong\AppData\Roaming
+APPDATA = C:\Users\ik970\AppData\Roaming
 # environment
 HOMEDRIVE = C:
 # environment
@@ -179,15 +175,15 @@ PROCESSOR_ARCHITECTURE = AMD64
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /home/Jeong
+HOME = /home/ik9702
 # environment
 COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-TEMP = /c/Users/Jeong/AppData/Local/Temp
+TEMP = /c/Users/ik970/AppData/Local/Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\08edd6a5e2ab871309a1685105ed45d9-1.70.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\9b4660dcc1584237fb4656f4edc1790c-1.70.0-main-sock
 # environment
 TERM = xterm-256color
 # default
@@ -200,12 +196,16 @@ SUFFIXES :=
 ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
-PROCESSOR_REVISION = 6001
+PROCESSOR_REVISION = 9e0c
 # environment
-PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 12, GenuineIntel
 # variable set hash-table stats:
 # Load=98/1024=10%, Rehash=0, Collisions=12/129=9%
 
@@ -215,9 +215,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 
 # Directories
 
-# . (device 2898570922, inode 18858823439738168): 14 files, no impossibilities.
+# . (device 2852577504, inode 12384898975730785): 13 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -276,7 +276,7 @@ all:
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-09 14:23:21.2091788
+#  Last modified 2022-08-06 19:56:07.4478511
 #  File has been updated.
 #  Successfully updated.
 
@@ -294,12 +294,12 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 141 B / avg = 7 B
-# current buf: size = 8162 B / used = 141 B / count = 20 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 136 B / avg = 7 B
+# current buf: size = 8162 B / used = 136 B / count = 19 / avg = 7 B
 
-# strcache performance: lookups = 29 / hit rate = 31%
+# strcache performance: lookups = 28 / hit rate = 32%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=0/29=0%
-# Finished Make data base on Thu Aug 11 17:45:37 2022
+# Load=19/8192=0%, Rehash=0, Collisions=0/28=0%
+# Finished Make data base on Thu Aug 11 23:10:57 2022
 
  

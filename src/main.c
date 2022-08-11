@@ -49,29 +49,50 @@ int main()
     return 0;
 }
 
-void hann(int length, float input[])
-{
-    for(int i=0; i<length; i++)
-    {
-        input[i] = 0.5 * (1 - (float)cos(2 * (float)pi * i / (length -1)));
-    }
-}
+// void hann(int length, float input[])
+// {
+//     for(int i=0; i<length; i++)
+//     {
+//         input[i] = 0.5 * (1 - (float)cos(2 * (float)pi * i / (length -1)));
+//     }
+// }
 
 
 
 
 
 
-void stft(float input[], float stft[], int length, int n_fft, int hop_length, float[] window)
-{
-    float *Cinput;
-    int time_length = 
-    Cinput = (Cpx*)(calloc(length, sizeof(Cpx)));
-    RtoC(&input[0], &Cinput[0], length);
+// void stft(float input[], Cpx stft[], int length, int n_fft, int hop_length, float window[])
+// {
+//     float *Cinput;
+//     int pad_length = length + (n_fft >> 1);
+//     int time_point = 1 + (int)((pad_length - n_fft) / hop_length);
+//     int stp, i, j;
+
+//     float *pad_input;
+//     pad_input = (float*)(calloc(pad_length, sizeof(float)));
+//     for(i=0; i<length; i++)
+//     {
+//         pad_input[i + (n_fft>>1)] = input[i];        
+//     }
+//     for(i=0; i<(n_fft>>1); i++)
+//     {
+//         pad_input[(n_fft>>1) -1 -i] = pad_input[(n_fft>>1) +i];
+//     }
+
+//     float *window;
+
+    
+    
+
+//     for(i=0; i<time_point; i++)
+//     {
+
+//     }
     
 
 
-}
+// }
 
 
 
