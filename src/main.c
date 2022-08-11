@@ -3,6 +3,7 @@
 #include <math.h>
 #include "main.h"
 
+#define pi 3.14159265358979323846
 
 void export(float input[], int lenth, char* DIR);
 void import(float input[], int lenth, char* DIR);
@@ -47,6 +48,35 @@ int main()
     printf("it works");
     return 0;
 }
+
+void hann(int length, float input[])
+{
+    for(int i=0; i<length; i++)
+    {
+        input[i] = 0.5 * (1 - (float)cos(2 * (float)pi * i / (length -1)));
+    }
+}
+
+
+
+
+
+
+void stft(float input[], float stft[], int length, int n_fft, int hop_length, float[] window)
+{
+    float *Cinput;
+    int time_length = 
+    Cinput = (Cpx*)(calloc(length, sizeof(Cpx)));
+    RtoC(&input[0], &Cinput[0], length);
+    
+
+
+}
+
+
+
+
+
 
 
 
