@@ -5,8 +5,9 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Fri Aug 12 17:36:28 2022
+# Make data base, printed on Tue Aug 16 13:49:44 2022
 
 # Variables
 
@@ -14,6 +15,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
+ 
 # environment
 LC_ALL = C
 # makefile (from 'makefile', line 1)
@@ -39,7 +41,7 @@ GOPATH = C:\Users\Jeong\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_10136_CDKKEJABNXHYPZVN
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11132_CRZRUFFQNAPNOGBQ
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -71,7 +73,7 @@ POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Pro
 # makefile
 CURDIR := /c/Users/Jeong/Dev/cfft_practice
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -91,7 +93,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 10136
+VSCODE_PID = 11132
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
@@ -215,6 +217,7 @@ PROCESSOR_REVISION = 6001
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
+ 
 # Load=102/1024=10%, Rehash=0, Collisions=13/133=10%
 
 # Pattern-specific Variable Values
@@ -223,6 +226,7 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 
 # Directories
 
+ 
 # . (device 2898570922, inode 18858823439738168): 14 files, no impossibilities.
 
 # 14 files, no impossibilities in 1 directories.
@@ -308,6 +312,6 @@ makefile:
 # strcache performance: lookups = 29 / hit rate = 31%
 # hash-table stats:
 # Load=20/8192=0%, Rehash=0, Collisions=0/29=0%
-# Finished Make data base on Fri Aug 12 17:36:28 2022
+# Finished Make data base on Tue Aug 16 13:49:44 2022
 
  
