@@ -5,17 +5,13 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Tue Aug 16 13:49:44 2022
+# Make data base, printed on Mon Aug 22 15:02:50 2022
 
 # Variables
 
 # environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# environment
 SYSTEMDRIVE = C:
- 
 # environment
 LC_ALL = C
 # makefile (from 'makefile', line 1)
@@ -23,11 +19,9 @@ OBJDIR = ./obj
 # environment
 USERPROFILE = C:\Users\Jeong
 # environment
-LOCAL_GIT_DIRECTORY = C:\Users\Jeong\AppData\Local\GitHubDesktop\app-3.0.5\resources\app\git
-# environment
 LOCALAPPDATA = C:\Users\Jeong\AppData\Local
 # environment
-VSCODE_CWD = C:\Users\Jeong\AppData\Local\GitHubDesktop\app-3.0.5
+VSCODE_CWD = C:\Users\Jeong\AppData\Local\Programs\Microsoft VS Code
 # environment
 SYSTEMROOT = C:\WINDOWS
 # environment
@@ -41,9 +35,7 @@ GOPATH = C:\Users\Jeong\go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11132_CRZRUFFQNAPNOGBQ
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_16220_PKXPRBKTYTARNDBX
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -55,7 +47,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Jeong\AppData\Roaming\Code\CachedData\6d9b74a70ca9c7733b29f0456fd8195364076dda
+VSCODE_CODE_CACHE_PATH = C:\Users\Jeong\AppData\Roaming\Code\CachedData\e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
 LANG = C
 # default
@@ -93,7 +85,7 @@ MAKEFILE_LIST := makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 11132
+VSCODE_PID = 16220
 # environment
 CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
@@ -103,7 +95,7 @@ CUDA_PATH = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"cbe5aafd932102a66266fc5a1fc1d63c.ko","_translationsConfigFile":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko\\tcf.json","_cacheRoot":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko","_resolvedLanguagePackCoreLocation":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko\\6d9b74a70ca9c7733b29f0456fd8195364076dda","_corruptedFile":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\cbe5aafd932102a66266fc5a1fc1d63c.ko\\corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"d4733d4bd5138ffb2c9d12a76b2e9102.ko","_translationsConfigFile":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\d4733d4bd5138ffb2c9d12a76b2e9102.ko\\tcf.json","_cacheRoot":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\d4733d4bd5138ffb2c9d12a76b2e9102.ko","_resolvedLanguagePackCoreLocation":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\d4733d4bd5138ffb2c9d12a76b2e9102.ko\\e4503b30fc78200f846c62cf8091b76ff5547662","_corruptedFile":"C:\\Users\\Jeong\\AppData\\Roaming\\Code\\clp\\d4733d4bd5138ffb2c9d12a76b2e9102.ko\\corrupted.info","_languagePackSupport":true}
 # environment
 ONEDRIVECONSUMER = C:\Users\Jeong\OneDrive
 # default
@@ -163,6 +155,8 @@ GNUMAKEFLAGS :=
 # environment
 OS = Windows_NT
 # environment
+__COMPAT_LAYER = DetectorsAppHealth
+# environment
 CUDA_PATH_V11_6 = C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6
 # makefile
 .DEFAULT_GOAL := all
@@ -193,7 +187,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = /c/Users/Jeong/AppData/Local/Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\08edd6a5e2ab871309a1685105ed45d9-1.70.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\08edd6a5e2ab871309a1685105ed45d9-1.70.2-main-sock
 # environment
 TERM = xterm-256color
 # default
@@ -206,10 +200,6 @@ SUFFIXES :=
 ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
-# environment
-VSCODE_CLI = 1
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
@@ -217,8 +207,7 @@ PROCESSOR_REVISION = 6001
 # environment
 PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 # variable set hash-table stats:
- 
-# Load=102/1024=10%, Rehash=0, Collisions=13/133=10%
+# Load=98/1024=10%, Rehash=0, Collisions=12/129=9%
 
 # Pattern-specific Variable Values
 
@@ -226,10 +215,9 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD
 
 # Directories
 
- 
-# . (device 2898570922, inode 18858823439738168): 14 files, no impossibilities.
+# . (device 2898570922, inode 18858823439738168): 15 files, no impossibilities.
 
-# 14 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -306,12 +294,12 @@ makefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 141 B / avg = 7 B
-# current buf: size = 8162 B / used = 141 B / count = 20 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 154 B / avg = 7 B
+# current buf: size = 8162 B / used = 154 B / count = 21 / avg = 7 B
 
-# strcache performance: lookups = 29 / hit rate = 31%
+# strcache performance: lookups = 30 / hit rate = 30%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=0/29=0%
-# Finished Make data base on Tue Aug 16 13:49:44 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/30=0%
+# Finished Make data base on Mon Aug 22 15:02:50 2022
 
  
